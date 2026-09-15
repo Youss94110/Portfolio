@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projet — Youssef Meftah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="netCanvas"></canvas>
+<div class="bg-grid"></div>
+<div class="bg-vignette"></div>
+
+<nav class="rail">
+  <div class="rail-nav">
+    <a class="rail-dot" data-page="index.html" href="index.html"><span class="rail-label">Accueil</span></a>
+    <a class="rail-dot" data-page="formation.html" href="formation.html"><span class="rail-label">Formation</span></a>
+    <a class="rail-dot" data-page="competences.html" href="competences.html"><span class="rail-label">Compétences</span></a>
+    <a class="rail-dot active" data-page="projet.html" href="projet.html"><span class="rail-label">Projets</span></a>
+    <a class="rail-dot" data-page="veille.html" href="veille.html"><span class="rail-label">Veille</span></a>
+    <a class="rail-dot" data-page="experience.html" href="experience.html"><span class="rail-label">Expérience</span></a>
+    <a class="rail-dot" data-page="contact.html" href="contact.html"><span class="rail-label">Contact</span></a>
+    <a class="rail-dot" href="cv.html"><span class="rail-label">CV</span></a>
+  </div>
+</nav>
+
+<div class="topbar">
+  <span class="display">YM</span>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="formation.html">Formation</a>
+    <a href="competences.html">Compétences</a>
+    <a class="active" href="projet.html">Projet</a>
+    <a href="veille.html">Veille</a>
+    <a href="experience.html">Expérience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main>
+  <section id="projet">
+    <div class="section-tag">03 — Projet</div>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Projet académique</h2>
+
+    <div class="case-file">
+      <div class="case-accent"></div>
+      <div class="case-head">
+        <h3>Mise en place d'un Active Directory avec GPO — Windows Server 2022</h3>
+        <div class="case-meta mono">
+          <span>PLATEFORME · Windows Server 2022</span>
+          <span>OUTIL · VirtualBox</span>
+          <span>DOMAINE · Active Directory (AD DS)</span>
+        </div>
+      </div>
+      <div class="case-body">
+        <div>
+          <p>Mise en place d'un environnement Windows Server 2022 virtualisé avec VirtualBox, incluant la configuration d'un contrôleur de domaine Active Directory (AD DS) pour la gestion centralisée des utilisateurs et des groupes.</p>
+          <p>Des stratégies de groupe (GPO) ont été appliquées afin de renforcer la sécurité et restreindre certaines fonctionnalités côté client. Une machine Windows cliente a ensuite été intégrée au domaine pour valider le bon fonctionnement de l'infrastructure.</p>
+          <p>Ce projet illustre les bases de l'administration système, de la sécurité et de la gestion d'un réseau Windows en entreprise.</p>
+        </div>
+        <div class="case-side">
+          <h4>ÉTAPES CLÉS</h4>
+          <ul>
+            <li>Virtualisation du serveur (VirtualBox)</li>
+            <li>Installation d'AD DS</li>
+            <li>Configuration des GPO</li>
+            <li>Intégration d'un poste client au domaine</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-note">PROJETS RÉALISÉS 2025–2026 · Windows Server 2019 · Gestion des comptes utilisateurs via Active Directory · Configuration et administration des serveurs DNS et DHCP · Nettoyage, sécurisation et optimisation de l'Active Directory DS (mars–avril 2026)</div>
+  </section>
+
+  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation — Youssef Meftah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="netCanvas"></canvas>
+<div class="bg-grid"></div>
+<div class="bg-vignette"></div>
+
+<nav class="rail">
+  <div class="rail-nav">
+    <a class="rail-dot" data-page="index.html" href="index.html"><span class="rail-label">Accueil</span></a>
+    <a class="rail-dot active" data-page="formation.html" href="formation.html"><span class="rail-label">Formation</span></a>
+    <a class="rail-dot" data-page="competences.html" href="competences.html"><span class="rail-label">Compétences</span></a>
+    <a class="rail-dot" data-page="projet.html" href="projet.html"><span class="rail-label">Projets</span></a>
+    <a class="rail-dot" data-page="veille.html" href="veille.html"><span class="rail-label">Veille</span></a>
+    <a class="rail-dot" data-page="experience.html" href="experience.html"><span class="rail-label">Expérience</span></a>
+    <a class="rail-dot" data-page="contact.html" href="contact.html"><span class="rail-label">Contact</span></a>
+    <a class="rail-dot" href="cv.html"><span class="rail-label">CV</span></a>
+  </div>
+</nav>
+
+<div class="topbar">
+  <span class="display">YM</span>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a class="active" href="formation.html">Formation</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projet.html">Projet</a>
+    <a href="veille.html">Veille</a>
+    <a href="experience.html">Expérience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main>
+  <section id="formation">
+    <div class="section-tag">01 — Diplômes obtenus</div>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Formation</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-years">2024 – 2025</div>
+        <div class="timeline-rail">
+          <div class="timeline-node"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <h3>Baccalauréat STMG</h3>
+          <div class="school">Lycée de Cachan</div>
+          <p>Sciences et Technologies du Management et de la Gestion.</p>
+          <span class="status-chip">OBTENU EN 2025</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-years">2025 – 2026</div>
+        <div class="timeline-rail">
+          <div class="timeline-node violet"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <h3>BTS SIO — option SISR</h3>
+          <div class="school">Lycée de Cachan</div>
+          <p>Solutions d'Infrastructures, Systèmes et Réseaux : administration des systèmes, sécurité et gestion de réseaux d'entreprise.</p>
+          <span class="status-chip">EN COURS — OBTENTION PRÉVUE 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

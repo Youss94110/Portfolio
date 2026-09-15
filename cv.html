@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youssef Meftah — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="netCanvas"></canvas><div class="bg-grid"></div><div class="bg-vignette"></div>
+<nav class="rail">
+  <div class="rail-nav">
+    <a class="rail-dot" href="index.html"><span class="rail-label">Accueil</span></a>
+    <a class="rail-dot" href="formation.html"><span class="rail-label">Formation</span></a>
+    <a class="rail-dot" href="competences.html"><span class="rail-label">Compétences</span></a>
+    <a class="rail-dot" href="projet.html"><span class="rail-label">Projets</span></a>
+    <a class="rail-dot" href="veille.html"><span class="rail-label">Veille</span></a>
+    <a class="rail-dot" href="experience.html"><span class="rail-label">Expérience</span></a>
+    <a class="rail-dot" href="contact.html"><span class="rail-label">Contact</span></a>
+    <a class="rail-dot active" href="cv.html"><span class="rail-label">CV</span></a>
+  </div>
+</nav>
+<main>
+  <section class="cv-page">
+    <div class="section-tag">DOCUMENT SÉCURISÉ</div>
+    <div class="cv-card">
+      <h1>Mon CV</h1>
+      <p>Cette page est protégée par un code. Une fois déverrouillée, le CV PDF sera affiché directement dans le portfolio.</p>
+      <a class="cv-link" id="openPdf" href="#">Ouvrir le PDF dans un nouvel onglet ↗</a>
+      <iframe class="cv-frame" id="cvFrame" title="CV de Youssef Meftah" hidden></iframe>
+    </div>
+  </section>
+</main>
+<div class="password-overlay" id="passwordOverlay">
+  <form class="password-box" id="passwordForm">
+    <h2>Accès au CV</h2>
+    <p>Entre le code de sécurité pour afficher le CV.</p>
+    <input id="passwordInput" type="password" autocomplete="off" placeholder="Code de sécurité" aria-label="Code de sécurité">
+    <div class="password-actions"><button class="password-submit" type="submit">Déverrouiller</button><button class="password-cancel" type="button" id="cancelBtn">Retour</button></div>
+    <div class="password-error" id="passwordError"></div>
+  </form>
+</div>
+<script src="script.js"></script>
+<script>
+// Code modifiable ici si tu veux en choisir un autre.
+const CV_PASSWORD = 'YM2026';
+// Le lien Drive fourni sert de source du PDF tant que le fichier PDF n'est pas placé localement dans /cv.pdf.
+const CV_URL = 'https://drive.google.com/file/d/17e1IeGtZSsavejXUnWCN0f8Q3zeTDDX7/view?usp=sharing';
+const overlay=document.getElementById('passwordOverlay');
+const form=document.getElementById('passwordForm');
+const input=document.getElementById('passwordInput');
+const error=document.getElementById('passwordError');
+const frame=document.getElementById('cvFrame');
+const openPdf=document.getElementById('openPdf');
+const cancel=document.getElementById('cancelBtn');
+form.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  if(input.value===CV_PASSWORD){
+    overlay.classList.add('hidden');
+    frame.hidden=false;
+    frame.src=CV_URL;
+    openPdf.href=CV_URL;
+    openPdf.target='_blank';
+    sessionStorage.setItem('cv_unlocked','1');
+  }else{ error.textContent='Code incorrect. Réessaie.'; input.select(); }
+});
+cancel.addEventListener('click',()=>location.href='index.html');
+if(sessionStorage.getItem('cv_unlocked')==='1'){
+  overlay.classList.add('hidden'); frame.hidden=false; frame.src=CV_URL; openPdf.href=CV_URL; openPdf.target='_blank';
+}
+</script>
+</body>
+</html>

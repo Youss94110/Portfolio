@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences — Youssef Meftah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="netCanvas"></canvas>
+<div class="bg-grid"></div>
+<div class="bg-vignette"></div>
+
+<nav class="rail">
+  <div class="rail-nav">
+    <a class="rail-dot" data-page="index.html" href="index.html"><span class="rail-label">Accueil</span></a>
+    <a class="rail-dot" data-page="formation.html" href="formation.html"><span class="rail-label">Formation</span></a>
+    <a class="rail-dot active" data-page="competences.html" href="competences.html"><span class="rail-label">Compétences</span></a>
+    <a class="rail-dot" data-page="projet.html" href="projet.html"><span class="rail-label">Projets</span></a>
+    <a class="rail-dot" data-page="veille.html" href="veille.html"><span class="rail-label">Veille</span></a>
+    <a class="rail-dot" data-page="experience.html" href="experience.html"><span class="rail-label">Expérience</span></a>
+    <a class="rail-dot" data-page="contact.html" href="contact.html"><span class="rail-label">Contact</span></a>
+    <a class="rail-dot" href="cv.html"><span class="rail-label">CV</span></a>
+  </div>
+</nav>
+
+<div class="topbar">
+  <span class="display">YM</span>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="formation.html">Formation</a>
+    <a class="active" href="competences.html">Compétences</a>
+    <a href="projet.html">Projet</a>
+    <a href="veille.html">Veille</a>
+    <a href="experience.html">Expérience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main>
+  <section id="competences">
+    <div class="section-tag">02 — Compétences techniques</div>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Compétences</h2>
+
+    <div class="skills-grid">
+      <div class="skill-mod c-teal">
+        <div class="skill-mod-head">
+          <h3>Administration systèmes</h3>
+          <span class="skill-index mono">01</span>
+        </div>
+        <ul>
+          <li>Administration des environnements Windows &amp; Linux</li>
+          <li>Gestion et configuration de Windows Server (Active Directory)</li>
+          <li>Gestion des utilisateurs et des droits d'accès, GPO</li>
+          <li>Automatisation des tâches (PowerShell)</li>
+        </ul>
+      </div>
+
+      <div class="skill-mod c-amber">
+        <div class="skill-mod-head">
+          <h3>Réseaux &amp; infrastructure</h3>
+          <span class="skill-index mono">02</span>
+        </div>
+        <ul>
+          <li>Commutation réseau (VLAN, adressage IP)</li>
+          <li>Configuration et gestion de pare-feu PFSense</li>
+          <li>Notions de routage</li>
+          <li>Architecture et gestion de systèmes réseau</li>
+        </ul>
+      </div>
+
+      <div class="skill-mod c-violet">
+        <div class="skill-mod-head">
+          <h3>Virtualisation</h3>
+          <span class="skill-index mono">03</span>
+        </div>
+        <ul>
+          <li>Déploiement et gestion de machines virtuelles avec VirtualBox</li>
+          <li>Création d'environnements de test et de laboratoire</li>
+        </ul>
+      </div>
+
+      <div class="skill-mod c-teal">
+        <div class="skill-mod-head">
+          <h3>Bases de données</h3>
+          <span class="skill-index mono">04</span>
+        </div>
+        <ul>
+          <li>Administration et gestion de bases de données MySQL (notions de base)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block-label mono">OUTILS &amp; ENVIRONNEMENTS</div>
+    <div class="langs-list">
+      <span class="tag">PowerShell</span>
+      <span class="tag">Shell</span>
+      <span class="tag">Python</span>
+      <span class="tag">Windows Server 2019 / 2022</span>
+      <span class="tag">Windows 10</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Packet Tracer</span>
+    </div>
+
+    <div class="block-label mono">QUALITÉS</div>
+    <div class="langs-list">
+      <span class="tag">Assidu</span>
+      <span class="tag">Curieux</span>
+      <span class="tag">Rigoureux</span>
+      <span class="tag">Ponctuel</span>
+    </div>
+
+    <div class="langs-row">
+      <div class="lang-item">
+        <div class="status-label mono">ANGLAIS</div>
+        <div>Niveau B1</div>
+        <div class="lang-bar"><span style="width:55%"></span></div>
+      </div>
+      <div class="lang-item">
+        <div class="status-label mono">ESPAGNOL</div>
+        <div>Niveau B1</div>
+        <div class="lang-bar"><span style="width:55%; background:var(--violet);"></span></div>
+      </div>
+    </div>
+  </section>
+
+  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
