@@ -11,23 +11,35 @@
 </head>
 <body>
 
-<div class="page-transition"></div>
 <canvas id="netCanvas"></canvas>
 <div class="bg-grid"></div>
 <div class="bg-vignette"></div>
 
-<header class="topnav">
-  <a class="brand" href="index.html">Youssef<span>.</span>Meftah</a>
-  <nav class="topnav-links">
-    <a class="nav-link" href="index.html">Accueil</a>
-    <a class="nav-link" href="formation.html">Formation</a>
-    <a class="nav-link" href="competences.html">Compétences</a>
-    <a class="nav-link" href="projet.html">Projet</a>
-    <a class="nav-link" href="veille.html">Veille</a>
-    <a class="nav-link active" href="experience.html">Expérience</a>
-    <a class="nav-link" href="contact.html">Contact</a>
+<nav class="rail">
+  <div class="rail-nav">
+    <a class="rail-dot" data-page="index.html" href="index.html"><span class="rail-label">Accueil</span></a>
+    <a class="rail-dot" data-page="formation.html" href="formation.html"><span class="rail-label">Formation</span></a>
+    <a class="rail-dot" data-page="competences.html" href="competences.html"><span class="rail-label">Compétences</span></a>
+    <a class="rail-dot" data-page="projet.html" href="projet.html"><span class="rail-label">Projets</span></a>
+    <a class="rail-dot" data-page="veille.html" href="veille.html"><span class="rail-label">Veille</span></a>
+    <a class="rail-dot active" data-page="experience.html" href="experience.html"><span class="rail-label">Expérience</span></a>
+    <a class="rail-dot" data-page="contact.html" href="contact.html"><span class="rail-label">Contact</span></a>
+    <a class="rail-dot" href="cv.html"><span class="rail-label">CV</span></a>
+  </div>
+</nav>
+
+<div class="topbar">
+  <span class="display">YM</span>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="formation.html">Formation</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projet.html">Projet</a>
+    <a href="veille.html">Veille</a>
+    <a class="active" href="experience.html">Expérience</a>
+    <a href="contact.html">Contact</a>
   </nav>
-</header>
+</div>
 
 <main>
   <section id="experience">
@@ -43,24 +55,9 @@
         <p>Travaux d'imprimerie : impression, plastification, scans de documents.</p>
       </div>
     </div>
-
-    <div class="block-label mono" style="margin-top:60px;">MON CV</div>
-
-    <div class="cv-unlocked">
-      <div class="cv-toolbar">
-        <span class="status-label mono">CV_YOUSSEF_MEFTAH.PDF</span>
-        <a class="cv-btn cv-btn-ghost" href="cv-youssef-meftah.pdf" download>Télécharger</a>
-      </div>
-      <div class="cv-frame-wrap">
-        <iframe class="cv-frame" title="CV Youssef Meftah" src="cv-youssef-meftah.pdf"></iframe>
-      </div>
-    </div>
   </section>
 
-  <footer>
-    <span>YOUSSEF MEFTAH · BTS SIO SISR · LYCÉE DE CACHAN</span>
-    <span>© 2026</span>
-  </footer>
+  
 </main>
 
 <script src="script.js"></script>
